@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code Editor Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+  <div class="run-button">
+    <button>
+       Run
+    </button>
+  </div>
+</div>
+
+<div class="editor-container">
+  <div class="sidebar">
+    <div class="search">
+        <h3>Search</h3>
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+      </div>
+    <div class="file-explorer">
+      <h3>File Explorer</h3>
+      <ul>
+        <li>File 1</li>
+        <li>File 2</li>
+        <li>File 3</li>
+      </ul>
+    </div>
+  </div>
+  <div class="editor">
+    <textarea id="code-editor"></textarea>
+  </div>
+  <div class="status-bar">
+  </div>
+</div>
+
+<!-- Include necessary JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/monaco-editor@4.4.6/min/vs/loader.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
